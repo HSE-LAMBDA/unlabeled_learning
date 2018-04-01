@@ -103,3 +103,7 @@ ENV/
 *.cpp
 *.so
 .pytest_cache/
+.idea/
+
+*.png
+mnist/

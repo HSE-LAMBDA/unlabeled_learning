@@ -58,6 +58,15 @@ extensions = [
     library_dirs=get_library_dirs(),
     language='c++',
     extra_compile_args=extra_compile_args
+  ),
+
+  Extension(
+    'psgd.grouping.lsh', ['psgd/grouping/lsh.pyx'],
+    libraries=['stdc++'],
+    include_dirs=[np.get_include()] + get_includes(),
+    library_dirs=get_library_dirs(),
+    language='c++',
+    extra_compile_args=extra_compile_args
   )
 ]
 
@@ -104,7 +113,8 @@ setup(
 
   install_requires=[
     'numpy',
-    'cython'
+    'cython',
+    'scikit-learn'
   ],
 
   ext_modules = cythonize(extensions, gdb_debug=False),
