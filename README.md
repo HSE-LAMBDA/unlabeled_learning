@@ -1,10 +1,11 @@
 # unlabeled_learning
 
-To install package:
+To install the package:
 
 ```
 git clone <this repo> <a directory>
 cd <that exact directory>
+pip install cython
 pip install -e .
 ```
 
