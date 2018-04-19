@@ -1,5 +1,7 @@
 # unlabeled_learning
 
+### Installation
+
 To install the package:
 
 ```
@@ -10,3 +12,11 @@ pip install -e .
 ```
 
 [docs for `-e` option](https://pip.pypa.io/en/stable/reference/pip_install/#install-editable)
+
+
+### Updating
+
+```
+<update repository>
+python setup.py build_ext --inplace
+```
